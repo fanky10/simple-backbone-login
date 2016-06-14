@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><%= title %></h3>
+                </div>
+                <div class="panel-body">
+                    <form class="js-login-form" role="form" method="POST">
+                        <fieldset>
+                            <div class="form-group js-username-wrapper">
+                                <input id="username" class="form-control js-username" placeholder="User" name="username" id="username" autofocus="">
+                                <label id="username-error" class="control-label hidden js-username-label" for="username"></label>
+                            </div>
+                            <div class="form-group js-password-wrapper">
+                                <input id="password" class="form-control js-password" placeholder="Password" name="password" type="password" value="">
+                                <label id="password-error" class="control-label hidden js-password-label" for="password"></label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                </label>
+                            </div>
+                            <!-- Change this to a button or input when using this as a form -->
+                            <input name="submit" type="submit" value="Login" class="js-login-button btn btn-lg btn-success btn-block">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="js-login-spinner spinner spinner-fix-mobile spinner-visibility">
+        </div>
+    </div>
+</div>
